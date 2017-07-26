@@ -9,11 +9,18 @@ html, body, ul, li {
     text-align: center;
 }
 
-#gallery .photos img {
-    width: 100%;
-    display: none;
+#gallery .photos {
+    position: relative;
+    height: 620px;
 }
 
-#gallery .photos img:first-child {
-    display: block;
+#gallery .photos img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+#gallery .photos img.active {
+    opacity: 1;
 }
